@@ -61,15 +61,19 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
         bottomNavigation = findViewById(R.id.bottom_navigation);
 
         bottomNavigation.setOnNavigationItemSelectedListener(menuItem -> {
+
+
+            FragmentFactory fragment = new FragmentFactory();
             switch (menuItem.getItemId()) {
+
                 case R.id.home:
-                    loadFragment(HomeFragment.getInstance());
+                    loadFragment(fragment.getIntance(FragmentE.HOME));
                     return true;
                 case R.id.search:
-                    loadFragment(SecondFragment.getIntance());
+                    loadFragment(fragment.getIntance(FragmentE.SEAR));
                     return true;
                 case R.id.fav:
-                    loadFragment(FavFragment.getInstance());
+                    loadFragment(fragment.getIntance(FragmentE.FAV));
                     return true;
                 case R.id.personal:
                     return true;

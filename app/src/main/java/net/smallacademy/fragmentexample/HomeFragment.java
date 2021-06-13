@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment{
 //    private OnFragmentItemSelectedListener listener;
     private ViewPager2 viewPager2;
     private Handler sliderHander = new Handler();

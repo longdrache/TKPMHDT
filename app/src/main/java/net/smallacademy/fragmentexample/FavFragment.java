@@ -15,12 +15,12 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class FavFragment extends Fragment {
-    private static FavFragment favFragment;
+public class FavFragment  extends Fragment  {
+    private static   FavFragment favFragment;
     private FavFragment(){};
-    public static synchronized FavFragment getInstance(){
+    public static   synchronized FavFragment getIntance() {
         if(favFragment==null){
-            favFragment=new FavFragment();
+            favFragment= new FavFragment();
         }
         return favFragment;
     }
@@ -55,5 +55,7 @@ public class FavFragment extends Fragment {
         super.onStop();
         cardviewadapter.stopListening();
     }
+
+
 
 }

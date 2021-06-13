@@ -1,8 +1,6 @@
 package net.smallacademy.fragmentexample;
 
-public class UserHelperClass {
-    String name, email, mobile_number, password;
-
+public class UserHelperClass extends AbstractUser{
     public UserHelperClass() {
     }
 
@@ -13,33 +11,38 @@ public class UserHelperClass {
         this.password = password;
     }
 
+    @Override
+    public boolean isNull() {
+        return false;
+    }
+    @Override
     public String getName() {
-        return name;
+    return name;
     }
 
     public void setName(String name) {
-        this.name = name;
+    this.name = name;
     }
-
+    @Override
     public String getEmail() {
-        return email;
+    return email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+    this.email = email;
     }
-
+    @Override
     public String getMobile_number() {
-        return mobile_number;
+    return mobile_number;
     }
 
     public void setMobile_number(String mobile_number) {
-        this.mobile_number = mobile_number;
+    this.mobile_number = mobile_number;
     }
-
+    @Override
     public String getPassword() {
-        return password;
-    }
+return password;
+}
 
     public void setPassword(String password) {
         this.password = password;

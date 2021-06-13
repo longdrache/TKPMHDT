@@ -170,7 +170,7 @@ public class UserProfile extends AppCompatActivity {
     }
     private void uploadtofirebase() {
         final ProgressDialog dialog=new ProgressDialog(this);
-        dialog.setTitle("C?t nh?t thông tin...");
+        dialog.setTitle("Cật nhật thông tin...");
         dialog.show();
         StorageReference Imagefolder = FirebaseStorage.getInstance().getReference().child("ImageFolder");
         Random generator = new Random();
