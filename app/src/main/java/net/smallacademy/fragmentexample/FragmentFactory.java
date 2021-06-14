@@ -10,7 +10,7 @@ public class FragmentFactory {
                 return  HomeFragment.getInstance();
             case FAV:
                 return FavFragment.getIntance();
-            case SEAR:
+            case SEC:
                 return SecondFragment.getIntance();
         }
         return null;

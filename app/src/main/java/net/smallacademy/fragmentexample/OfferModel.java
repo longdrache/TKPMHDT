@@ -1,6 +1,6 @@
 package net.smallacademy.fragmentexample;
 
-public class OfferModel {
+public class OfferModel  {
 
     String offer_title;
     String offer_img;

@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements DrawerAdapter.OnI
                     loadFragment(fragment.getIntance(FragmentE.HOME));
                     return true;
                 case R.id.search:
-                    loadFragment(fragment.getIntance(FragmentE.SEAR));
+                    loadFragment(fragment.getIntance(FragmentE.SEC));
                     return true;
                 case R.id.fav:
                     loadFragment(fragment.getIntance(FragmentE.FAV));

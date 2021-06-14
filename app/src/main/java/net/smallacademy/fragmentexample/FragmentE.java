@@ -1,5 +1,5 @@
 package net.smallacademy.fragmentexample;
 
 public enum FragmentE {
-    HOME,FAV,SEAR
+    HOME,FAV,SEC
 }
